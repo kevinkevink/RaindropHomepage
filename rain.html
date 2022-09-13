@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<script src="./main.js" defer></script>
+<script src="./rain.js" defer></script>
+<link rel="stylesheet" href="./main.css">
+<html>
+<head>
+  <title>New Page</title>
+</head>
+
+<body>
+    <canvas id="particleCanvas"> </canvas>
+    <div id="searchWrapper">
+        <form id="form"> 
+            <input type="search" 
+            id="query" name="q" 
+            placeholder="Search..."
+            autocomplete="off">
+        </form>
+    </div>
+    <div id="settingsPage" class="expand">
+        <button type="button" id="close">X</button>
+        <div id="frame">
+            <div id="BCframe">
+                <div>Background Color:</div>
+                <button type="button" id="bcc1" class="colorButton blue"></button>
+                <button type="button" id="bcc2" class="colorButton red"></button>
+                <button type="button" id="bcc3" class="colorButton yellow"></button>
+                <button type="button" id="bcc4" class="colorButton purple"></button>
+                <button type="button" id="bcc5" class="colorButton green"></button>
+                <input type="text" id="bccText" name="bccText" class="textBox">
+            </div>
+            <div id="RCframe">
+                <div>Rain Color:</div>
+                <button type="button" id="rcc1" class="colorButton blue"></button>
+                <button type="button" id="rcc2" class="colorButton red"></button>
+                <button type="button" id="rcc3" class="colorButton yellow"></button>
+                <button type="button" id="rcc4" class="colorButton purple"></button>
+                <button type="button" id="rcc5" class="colorButton green"></button>
+                <input type="text" id="rccText" name="rccText" class="textBox">
+            </div>
+            <div id="SBCframe">
+                <div>Search Bar Color:</div>
+                <button type="button" id="sbcc1" class="colorButton blue"></button>
+                <button type="button" id="sbcc2" class="colorButton red"></button>
+                <button type="button" id="sbcc3" class="colorButton yellow"></button>
+                <button type="button" id="sbcc4" class="colorButton purple"></button>
+                <button type="button" id="sbcc5" class="colorButton green"></button>
+                <input type="text" id="sbccText" name="sbcText" class="textBox">
+            </div>
+            <div id="rainAmountFrame">
+                <div>Rain Amount:</div>
+                <input type="range" min="1" max="20" value="10" class="slider" id="rainAmount" name="rainAmount">
+            </div>
+            <button type="button" id="Save">Save</button>
+        </div>
+    </div>
+    <button type="button" id="settings">Settings</button>
+</body>
+</html>
